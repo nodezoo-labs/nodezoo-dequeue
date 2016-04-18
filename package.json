@@ -1,0 +1,38 @@
+{
+  "name": "nodezoo-dequeue",
+  "version": "0.0.1",
+  "description": "A message dequeuer for nodezoo",
+  "scripts": {
+    "start": "node srv/start.js",
+    "lint": "lab -P test -dL",
+  },
+  "main": "lib/dequeue.js",
+  "keywords": [
+    "nodezoo",
+    "seneca",
+    "microservice"
+  ],
+  "author": "Dean McDonnell (github.com/mcdonnelldean)",
+  "contributors": [
+    "Shane Lacey (github.com/shanel262)"
+  ],
+  "homepage": "https://github.com/nodezoo/nodezoo-dequeue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodezoo/nodezoo-dequeue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodezoo/nodezoo-dequeue/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "code": "2.2.0",
+    "coveralls": "2.11.9",
+    "eslint-config-seneca": "1.1.2",
+    "eslint-plugin-hapi": "4.0.0",
+    "eslint-plugin-standard": "1.3.2",
+    "lab": "10.3.1"
+  }
+}
