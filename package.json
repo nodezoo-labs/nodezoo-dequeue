@@ -4,7 +4,7 @@
   "description": "A message dequeuer for nodezoo",
   "scripts": {
     "start": "node srv/start.js",
-    "lint": "lab -P test -dL",
+    "lint": "lab -P test -dL"
   },
   "main": "lib/dequeue.js",
   "keywords": [
@@ -14,7 +14,8 @@
   ],
   "author": "Dean McDonnell (github.com/mcdonnelldean)",
   "contributors": [
-    "Shane Lacey (github.com/shanel262)"
+    "Shane Lacey (github.com/shanel262)",
+    "GeGe Pincin (github.com/Georgette)"
   ],
   "homepage": "https://github.com/nodezoo/nodezoo-dequeue#readme",
   "repository": {
@@ -26,6 +27,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "seneca": "2.0.1",
+    "seneca-balance-client": "0.4.0",
+    "seneca-entity": "0.0.1",
+    "seneca-mesh": "0.7.0",
+    "seneca-redis-queue-transport": "0.3.0"
   },
   "devDependencies": {
     "code": "2.2.0",
