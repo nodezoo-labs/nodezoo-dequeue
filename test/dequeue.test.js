@@ -1,3 +1,5 @@
+'use strict'
+
 var Code = require('code')
 var Lab = require('lab')
 var Seneca = require('seneca')
