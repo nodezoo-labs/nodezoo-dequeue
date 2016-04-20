@@ -34,7 +34,6 @@ describe('nodezoo-dequeue tests', () => {
   it('Plugin Recieves Messages', function (done) {
     Service.act({role: 'updater', info: 'update', name: 'honeybadger'}, function (err, respond) {
       expect(err).to.not.exist()
-      expect(respond).to.exist()
       done(err)
     })
   })
