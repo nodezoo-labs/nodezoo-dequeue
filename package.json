@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node srv/start.js",
     "lint": "lab -P test -dL",
-    "test": "lab"
+    "test": "lab -v -P test -L -t 80"
   },
   "main": "lib/dequeue.js",
   "keywords": [
