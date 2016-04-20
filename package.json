@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node srv/start.js",
     "lint": "lab -P test -dL",
+    "test": "lab -v -P test -L -t 80"
   },
   "main": "lib/dequeue.js",
   "keywords": [
@@ -12,7 +13,7 @@
     "seneca",
     "microservice"
   ],
-  "author": "Dean McDonnell (github.com/mcdonnelldean)",
+  "author": "GeGe Pincin (github.com/Georgette)",
   "contributors": [
     "Shane Lacey (github.com/shanel262)"
   ],
@@ -26,6 +27,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "seneca": "2.0.1",
+    "seneca-balance-client": "0.4.0",
+    "seneca-entity": "0.0.1",
+    "seneca-mesh": "0.7.0",
+    "seneca-redis-queue-transport": "0.3.0"
   },
   "devDependencies": {
     "code": "2.2.0",
