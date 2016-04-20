@@ -4,7 +4,8 @@
   "description": "A message dequeuer for nodezoo",
   "scripts": {
     "start": "node srv/start.js",
-    "lint": "lab -P test -dL"
+    "lint": "lab -P test -dL",
+    "test": "lab"
   },
   "main": "lib/dequeue.js",
   "keywords": [
@@ -12,10 +13,9 @@
     "seneca",
     "microservice"
   ],
-  "author": "Dean McDonnell (github.com/mcdonnelldean)",
+  "author": "GeGe Pincin (github.com/Georgette)",
   "contributors": [
-    "Shane Lacey (github.com/shanel262)",
-    "GeGe Pincin (github.com/Georgette)"
+    "Shane Lacey (github.com/shanel262)"
   ],
   "homepage": "https://github.com/nodezoo/nodezoo-dequeue#readme",
   "repository": {

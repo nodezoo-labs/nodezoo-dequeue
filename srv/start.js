@@ -3,6 +3,8 @@
 var Seneca = require('seneca')
 var Entities = require('seneca-entity')
 var RedisQ = require('seneca-redis-queue-transport')
+var Mesh = require('seneca-mesh')
+var Dequeue = require('../lib/dequeue')
 
 var opts = {
   redisQ: {
@@ -21,8 +23,12 @@ var opts = {
 var Service = Seneca()
 
 Service
+  .use(Mesh, opts.mesh)
   .use(Entities)
   .use(RedisQ, opts.redisQ)
-  .use('mesh', opts.mesh)
-  .use('../lib/dequeue.js')
-  .listen({pin: 'role:updater,info:update', type: 'redis-queue'})
+  .use(Dequeue)
+
+Service.ready((err) => {
+  if (err) Service.log.error(err)
+  Service.listen({pin: 'role:updater,info:update', type: 'redis-queue'})
+})
