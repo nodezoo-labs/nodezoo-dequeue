@@ -1,6 +1,6 @@
 {
   "name": "nodezoo-dequeue",
-  "version": "0.0.2",
+  "version": "1.0.2",
   "description": "A message dequeuer for nodezoo",
   "scripts": {
     "start": "node srv/start.js",
