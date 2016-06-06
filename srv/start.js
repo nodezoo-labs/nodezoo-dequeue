@@ -6,6 +6,8 @@ var RedisQ = require('seneca-redis-queue-transport')
 var Mesh = require('seneca-mesh')
 var Dequeue = require('../lib/dequeue')
 
+var envs = process.env
+
 var opts = {
   redisQ: {
     'redis-queue': {
