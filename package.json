@@ -17,6 +17,14 @@
   "contributors": [
     "Shane Lacey (github.com/shanel262)"
   ],
+  "files": [
+    "README.md",
+    "package.json",
+    "LICENSE",
+    "srv",
+    "lib",
+    "Dockerfile"
+  ],
   "homepage": "https://github.com/nodezoo/nodezoo-dequeue#readme",
   "repository": {
     "type": "git",
